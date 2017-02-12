@@ -1,14 +1,22 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <hello></hello>
   </div>
 </template>
 
 <script>
+import Hello from './components/Hello'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    Hello
+  }
 }
 </script>
 
 <style>
+#app {
+  text-align: center;
+}
 </style>
